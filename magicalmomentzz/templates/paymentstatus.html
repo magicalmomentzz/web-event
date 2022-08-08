@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR PAYMENT STATUS</title>
+</head>
+
+<body>
+    <div class="container">
+        {{response}}
+        <div class="response">
+            <h2>payment status regarding your order id {{response.orderId}}</h2>
+            {% if response.RESPCODE == '01' %}
+            YOUR PAYMENT IS SUCCESS
+            {% else %}
+            PAYMENT FAIL
+            {% elif %}
+        </div>
+    </div>
+</body>
+
+</html>
